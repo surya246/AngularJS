@@ -1,0 +1,121 @@
+{
+  "Basics": {
+    "name": "Surya Prakash Thota",
+    "label": "Software Engineer",
+    "email": "thotasuryaprakash246@gmail.com",
+    "phone": "+91 9553118466"
+   },
+   "Objective":{		
+    "summary": "Seeking a position in both innovative and challenging with ample scope to apply and improve my technical skills as well as growth of the Organisation."},
+    
+    "Profiles": [{
+      "network": "Facebook",
+      "username": "thotasuryaprakash246@gmail.com",
+      "url": "http://www.facebook.com/suryaprakashthota"
+    }, {
+      "network": "google-plus",
+      "username": "thotasuryaprakash246@gmail.com",
+      "url": "https://plus.google.com/u/0/115308336882001927275/"
+    }, {
+      "network": "Github",
+      "username": "surya246",
+      "url": "https://github.com/surya246"
+    }],
+  
+  "Education": [{
+    "Institution": "JNTUK University",
+    "Area": "Electrical & Electronics Engineering",
+    "StudyType": "Master of Technology",
+    "StartDate": "2013-08",
+    "EndDate": "2015-12",
+    "GPA": "8.5"
+    
+  }, {
+    "Institution": "JNTUK University",
+    "Area": "Electrical & Electronics Engineering",
+    "StudyType": "Bachelor of Technology",
+    "StartDate": "2009-06",
+    "EndDate": "2013-05",
+    "GPA": "8.2"
+    
+  }, {
+    "institution": "Board of Intermediate",
+    "area": "MPC",
+    "studyType": "Intermediate",
+    "startDate": "2007-06",
+    "endDate": "2009-05",
+    "gpa": "9.0"
+  
+  }, {
+    "Institution": "Board of Secondary Education",
+    "Area": "Higher Education",
+    "StudyType": "SSC",
+    "StartDate": "2006-06",
+    "EndDate": "2007-04",
+    "GPA": "9.0"
+    
+  }],
+  "Achievements": ["Stood College first in B.Tech", "Stood Prizes in Paper presentations conducted in various Engineering Colleges."],
+
+  "Skills": [{
+      "name": "Web Development",
+      "keywords": [
+        "HTML/CSS",
+        "Bootstrap",
+        "Javascript",
+        "jQuery"
+
+      ]
+    }, {
+      "name": "Programming languages",
+      "keywords": [
+        "C",
+        "C++",
+        "Java"
+      ]
+    }, {
+      "name": "Database",
+      "keywords": [
+        "MySQL"
+      ]
+    },
+
+    {
+      "name": "Tools",
+      "keywords": [
+        "MAT Lab",
+        "Embedded C"
+      ]
+    }, {
+      "name": "Operating Systems",
+      "keywords": [
+        "Windows",
+        "Linux"
+      ]
+    }
+  ],
+  "ProjectProfile": ["Project done on cascaded Multilevel inverter with reduced number of components Based n Developed H - Bridge ","Description: In this project a new cascaded multilevel inverter using developed H bridge is proposed and developed.The proposed topology requires a lesser number of dc   voltage sources and power switches and lower blocking voltage on switches,which results in decreased complexity and total cost of the inverter."],
+  "Languages": [{
+    "Language": "English",
+    "Fluency": "Good"
+  }, {
+    "Language": "Hindi",
+    "Fluency": "Intermediate"
+  }, {
+    "Language": "Telugu",
+    "Fluency": "Native speaker"
+  }],
+  "Interests": ["Coding","Browsing"],
+   "Address": {
+      "address": "Kukatpally",
+      "postalCode": "500 037",
+      "city": "Hyderabad",
+      "countryCode": "INDIA",
+      "region": "Telangana"
+    }, 	
+  "Declaration": ["The above information is true  to the best of my knowledge"
+
+
+
+  ]
+}

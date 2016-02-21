@@ -1,0 +1,105 @@
+<html>
+	<head>
+		<title>Surya Resume</title>
+		<link href="/bower_components/bootswatch-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="/css/resume.css" rel="stylesheet" type="text/css" media="screen">
+		<script src = "/bower_components/angular/angular.min.js"></script>
+		<script src = "js/modules/app.js"></script>
+		<script src = "js/controllers/controller.js"></script>
+		<script src = "js/models/services.js"></script>
+		
+
+	</head>
+	<body>
+			
+		<div ng-app = "resumeApp" ng-controller = "resCtrl">
+			<div class = "container">
+				<div ng-repeat = '(key, value) in obj.data'> 
+					<h4 class = "bg-info" ng-hide = "key == 'Basics'" >{{key}}</h4> <br>
+						<div ng-class = "{true: 'jumbotron', false: ''}[key == 'Basics']" >
+							<div ng-if = "key=='Basics'">			 									<img class="img-square pull-right" alt="Surya" title="surya" 	                                                         width="200" height="200" src="surya.jpg" />
+								<div ng-repeat='(key ,value) in obj.data[key]'>
+	 								<p>{{value}}</p>
+								</div>
+							</div>
+						</div>
+
+						<div ng-if = "key == 'Objective'">
+							<div ng-repeat='(key ,value) in obj.data[key]'>
+	 								<p>{{value}}</p>
+							</div>
+						</div>
+
+						<div ng-if = "key=='Profiles'">
+ 							<div ng-repeat="profile in obj.data.Profiles">
+								<h6>{{profile.network}}</h6><a ng-href= "{{profile.url}}">{{profile.username}}</a>
+	`						</div>
+						</div>
+
+						<div ng-if = "key == 'Education'">
+							
+								<table class = "table table-condensed">
+									<thead ng-repeat='(key ,value) in obj.data[key] | limitTo:1'>
+		 								<th ng-repeat='(key ,value) in value'>{{key}}</th>
+
+									</thead>
+									<tr ng-repeat='(key ,value) in obj.data[key]'>
+		 								<td ng-repeat='(key ,value) in value'>{{value}}</td>
+
+									</tr>
+										
+								</table>
+							
+						</div>
+						<div ng-if = "key == 'Achievements'">
+							<div ng-repeat='(key ,value) in obj.data[key]'>
+	 								<li>{{value}}</li>
+							</div> 	
+						</div>
+
+						<div ng-if = "key == 'Skills'">
+							<div ng-repeat='skills in obj.data[key]'>
+								{{skills.name}}:	
+								<span class= "badge" ng-repeat='one in skills.keywords'>
+	 								{{one}}
+									
+								</span>
+							</div>
+						</div>
+				
+						<div ng-if = "key == 'ProjectProfile'">
+							<div ng-repeat='(key ,value) in obj.data[key]'>
+	 								<p>{{value}}</p>
+							</div>
+						</div>
+
+						<div ng-if = "key == 'Languages'">
+							<div ng-repeat='languages in obj.data[key]'>
+								<span>{{languages.Language}} :	{{languages.Fluency}}</span>
+							</div>
+						</div>
+
+						<div ng-if = "key == 'Interests'">
+							<div ng-repeat='interest in obj.data[key]'>
+	 								<li>{{interest}}</li>
+							</div>
+						</div>
+								
+						<div ng-if = "key == 'Address'">
+							<div ng-repeat='(key ,value) in obj.data[key]'>
+	 								<p>{{value}}</p>
+							</div>
+						</div>
+						
+						<div ng-if = "key == 'Declaration'">
+							<div ng-repeat='info in obj.data[key]'>
+	 								<p>{{info}}</p>
+							</div>
+						</div>
+												
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
